@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Quicksand:wght@300;400&family=Roboto:wght@100&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+header {
+    background-color: #1A232E;
+    height: 10vh;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+header div ul {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+    
+}
+
+header div ul a {
+    color: rgb(219,222,225);
+    text-decoration: none;
+}
+
