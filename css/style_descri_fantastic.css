@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Quicksand:wght@300;400&family=Roboto:wght@100&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {background-color: #0F171E
+
+
+}
+
+
+header {
+    background-color: #1A232E;
+    height: 10vh;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+header div ul {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+    
+}
+
+header div ul a {
+    color: rgb(219,222,225);
+    text-decoration: none;
+}
+
+.banner {display: flex;
+    gap: 20px;
+    align-items: center;
+    background-color: #0F171E;
+    color: #FFFFFF ;
+
+}
+
+.descri {font-family: 'Noto Sans', sans-serif;
+    width: 40vw;
+
+
+}
+
+main {display: flex;
+    flex-direction: column;
+    margin: 50px;
+
+}
+main ul li {text-decoration: none;
+    list-style: none;
+    padding: 10px;
+    font-size: 1.1rem;
+    margin: 20px;
+
+
+}
+.descri span {color: #79B8F3;
+
+
+
+
+}
+main button {padding: 30px;
+    background-color:#0F79AF ;
+    margin-left: 50px;
+    color: #FFFFFF;
+    border-radius: 5px;
+
+
+}
+.descri h2 {padding: 10px;
+
+}
+.descri p {font-size: 0.9rem;
+    margin: 20px;
+
+}
+
+
+.fant {width: 60vw;
+
+}
+
+footer {display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+footer img {width: 100px;
+
+}
+.video {display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    
+
+
+}
+
+@media (max-width: 460px){
+    .banner {display: flex;
+        flex-direction: column-reverse;
+
+
+    }
+    main ul li {font-size: 0.8rem;
+        margin: 0px;
+        padding: 5px;
+
+    }
+
+    .lista {padding: 10px;
+
+    }
+
+    .descri {font-size: 0.7rem;
+        width: 60vw;
+
+    }
+
+    .descri p {margin: 0px ;
+        font-size: 0.8rem;
+
+
+    }
+
+    main {margin: 10px;
+
+    }
+    main button {margin: 20px;
+
+    }
+
+
+
+
+
+
+}
+

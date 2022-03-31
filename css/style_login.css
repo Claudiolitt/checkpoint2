@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Quicksand:wght@300;400&family=Roboto:wght@100&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+header {
+    background-color: #1A232E;
+    height: 10vh;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+header div ul {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+    
+}
+
+header div ul a {
+    color: rgb(219,222,225);
+    text-decoration: none;
+}
+
+main {display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Noto Sans', sans-serif;
+
+   
+
+}
+
+.login {
+    margin: 30px;
+    background-color: #162B3C;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: rgb(219,222,225);
+    gap: 10px;
+    padding:  50px;
+
+}
+
+main p a {list-style: none;
+    text-decoration: none;
+    color: rgb(219,222,225);
+    font-size: 0.8rem;
+}
+form {display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+
+}
+
+.entrar {
+    padding: 13px 65px;
+    border-radius: 10px;
+    margin: 20px;
+    text-decoration: none;
+    background-color: #0F79AF;
+    border: 1px solid rgba(255, 255, 255, 0.753);
+
+} 
+
+input[type=text],[type=password] {
+    outline: none;
+    margin: 5px;
+    padding: 10px 30px;
+    border-radius: 10px;
+    background-color:rgb(219,222,225) ;
+
+}
+.entrar:hover {font-weight: bold;
+
+}
+  
+main img {width: 200px;
+    margin: 10px;
+}
+
+.clik {color: #FF8506;
+
+}
+
+main span {
+    color: rgb(219,222,225);
+    font-size: 0.7rem;
+    }
