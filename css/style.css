@@ -6,22 +6,295 @@
     padding: 0;
 }
 
+:root {
+    --primary-color: #252e39;
+    --second-color:rgb(219,222,225);
+    --thirdy-color: rgb(8, 172, 62);
+}
+body {
+    height: fit-content;
+}
 
 header {
-    background-color: #1A232E;
-    height: 10vh;
+    font-weight: bold;
+    background-color: var(--primary-color);
+    height: fit-content;
     font-family: 'Noto Sans', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding-right: 10px;
+    color: var(--second-color);
+    
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+   
+
+}
+header::before {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    height: 4px;
+    animation: bg-pan-right 8s linear infinite both;
+    width: 100%;
+    
+
+}
+.nav-link {
+    color: var(--second-color);
+}
+
+.logo-cabecalho {
+    background-image: url(../img/logo-alunos\ 1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 50px;
+    width: 100px;
+    margin: 5px;    
+    animation: slide-in-elliptic-top-fwd 2s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+
+}
+
+
+.lista-cabecalho{
+    background-color: var(--primary-color);
 }
 
 header div ul {
     display: flex;
     list-style: none;
     gap: 10px;
+    align-items: center;
+    background-color: var(--primary-color);
+    color: var(--second-color);
+    
     
 }
 
-header div ul a {
-    color: rgb(219,222,225);
-    text-decoration: none;
+.bg-dark {
+    background-color: #252e39;
+}
+header .lista-cabecalho nav{    
+    background-color: #252e39;
+    padding: 0px;
+    color: var(--second-color);
+    
 }
 
+.navbar-toggler {
+    background-color: var(--primary-color);
+
+}
+    
+.text-light {
+    font-weight: 100;
+    color:var(--second-color);
+}
+
+.container-link {
+    position: relative;
+}
+
+.position-link{
+    animation: tracking-in-expand 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) 1 both;
+    
+}
+.position-link::before {
+    content: '';
+    width: 0%;
+    background-color: var(--thirdy-color);
+    position: absolute;
+    bottom: -5px;
+    height: 5px;
+    transition: 1s;
+    border-radius: 23.11px;
+    
+}
+
+
+.position-link:hover::before {
+    width: 20%;
+    
+}
+
+/*Main settings*/
+
+main {
+   height: fit-content;
+   display: flex;
+   flex-direction: column;
+
+}
+
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/Group\ 1.png);
+    background-size: contain;
+    background-attachment: fixed;
+    height: 80vh;
+    width: 100%;
+    
+}
+
+.logo-banner {
+   
+    height: 30vh;
+    width: 280px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    transition: 2s;
+}
+
+.logo-banner:hover {
+    transform: scale(1.3);
+}
+
+.slideshow {
+    height: fit-content;
+    background-color: var(--primary-color);
+    display: flex;
+    align-items: center;
+}
+
+.carousel-ctr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.carousel-img {
+    height: 60vh;
+    width: 100%;
+}
+.carousel-inner {
+    height: 60vh;
+    width: 100%;
+}
+
+
+.card-container {
+    height: fit-content;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+
+}
+
+.card {
+    width: 25%;
+    height: 40vh;
+}
+
+.card-img {
+    height: 30vh;
+}
+footer {
+    background-color: var(--primary-color);
+    height: 10vh;
+    font-family: 'Noto Sans', sans-serif;
+    display: flex;
+    align-items: center;
+    bottom: 0;
+    width: 100%;
+}
+
+@keyframes slide-in-elliptic-top-fwd {
+    0% {
+        transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
+        transform-origin: 50% 0%;
+        filter: blur(40px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0) scaleY(1) scaleX(1);
+        transform-origin: 50% 50%;
+        filter: blur(0);
+        opacity: 1;
+    }
+}
+
+@keyframes tracking-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+
+@keyframes bg-pan-right {
+    0% {
+        background-color: #9c026e;
+        background-position: 0% 30%;
+    }
+    
+    33% {
+        background-color: #02649c;
+        background-position: 30% 60%;
+    }
+
+    67% {
+        background-color: #0f9c02;
+        background-position: 60% 90%;
+    }
+
+    100% {
+        background-color: #02649c;
+        background-position: 90% 10%;
+    }
+}
+
+
+
+
+/*
+@keyframes bg-pan-left {
+    0% {
+        box-shadow: 0px 0px 1px 1px #1c9c02;
+    }
+    10% {
+        box-shadow: 1px 1px 1px 2px #027d9c;
+    }
+    20% {
+        box-shadow: 0px 0px 1px 1px #1c9c02;
+    }
+    30% {
+        box-shadow: 1px 1px 1px 2px #027d9c;
+    }
+    40% {
+        box-shadow: 0px 0px 1px 1px #1c9c02;
+    }
+    50% {
+        box-shadow: 1px 1px 1px 2px #027d9c;
+    }
+    60% {
+        box-shadow: 0px 0px 1px 1px #1c9c02;
+    }
+    70% {
+        box-shadow: 1px 1px 1px 2px #027d9c;
+    }
+    80% {
+        box-shadow: 0px 0px 1px 1px #1c9c02;
+    }
+    90% {
+        box-shadow: 1px 1px 1px 2px #027d9c;
+    }
+    100% {
+        box-shadow: 0px 0px 1px 1px #1c9c02;
+    }
+  }*/
