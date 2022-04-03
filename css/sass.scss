@@ -1,0 +1,273 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&family=Quicksand:wght@300;400&family=Roboto:wght@100&display=swap");
+
+$primary-color: #252e39;
+
+.slider {
+    width: 100%;
+    height: 85vh;
+
+    .items-group {
+        width: 100%;
+        height: 100%;
+        position: relative;
+
+        .item {
+            top: 0px;
+            left: 0px;
+            opacity: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            overflow: hidden;
+            transition: 0.5s;
+            visibility: hidden;
+            position: relative;
+            padding: 20px 20px;
+            position: absolute;
+            align-items: center;
+            justify-content: center;
+            box-sizing: border-box;
+
+            &:hover {
+                .bg {
+                    opacity: 0.2;
+                }
+
+                .block {
+                    box-shadow: 0px 0px 50px #333;
+                }
+                .card-text-p {
+                    transform: translateY(0);
+                }
+            }
+
+            &.active {
+                opacity: 1;
+                visibility: visible;
+            }
+
+            .bg {
+                top: 0px;
+                left: 0px;
+                opacity: 1;
+                z-index: -1;
+                width: 100%;
+                height: 100%;
+                transition: 0.5s;
+                position: absolute;
+                transform: scale(1.03);
+                background-size: cover;
+                background-position: center;
+                background-attachment: fixed;
+            }
+
+            .blur {
+                top: 0px;
+                left: 0px;
+                z-index: -1;
+                width: 100%;
+                height: 100%;
+                transition: 0.5s;
+                filter: blur(5px);
+                position: absolute;
+                transform: scale(1.03);
+                background-size: cover;
+                background-position: center;
+                background-attachment: fixed;
+            }
+
+            .block {
+                width: 100%;
+                height: 100%;
+                padding: 10px;
+                color: #ffffff;
+                transition: box-shadow 0.5s;
+                max-width: 300px;
+                overflow: hidden;
+                max-height: 450px;
+                border-radius: 10px;
+                transform: scale(1.03);
+                box-sizing: border-box;
+                background-size: cover;
+                background-position: center;
+                background-attachment: fixed;
+                box-shadow: none;
+
+                .circleLight {
+                    top: 0px;
+                    left: 0px;
+                    opacity: 0;
+                    content: "";
+                    width: 100%;
+                    height: 100%;
+                    display: block;
+                    transition: 0.5s;
+                    position: absolute;
+                    border-radius: 10px;
+                    background: radial-gradient(circle at 80px 40px, #fff, transparent);
+                }
+                               
+               
+                &:hover {
+                    box-shadow: 0px 0px 70px #111;
+
+                    .circleLight {
+                        opacity: 0.4;
+                    }
+                }
+            }
+        }
+    }
+
+    .navigations {
+        bottom: 8%;
+        width: 100%;
+        position: relative;
+
+        .dots {
+            height: 20px;
+            padding: 10px 0px;
+            text-align: center;
+
+            li {
+                width: 15px;
+                height: 15px;
+                cursor: pointer;
+                transition: 0.3s;
+                background: #fff;
+                border-radius: 50%;
+                display: inline-block;
+                vertical-align: middle;
+
+                & + li {
+                    margin-left: 10px;
+                }
+
+                &:hover {
+                    filter: blur(2px);
+                }
+
+                &.active {
+                    width: 20px;
+                    height: 20px;
+                    background-color: rgb(9, 164, 211);
+
+                    &:hover {
+                        filter: blur(0px);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    background-color: $primary-color;
+    opacity: 0.8;
+    color: #fff;
+    margin: 0;
+    overflow: hidden;
+    transition: 1.5s;
+
+    .background-1 {
+        background-image: url("https://br.web.img3.acsta.net/medias/nmedia/18/90/95/96/20122166.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }   
+
+    .card {
+        width: 33%;
+        height: 70vh;
+        display: flex;
+        align-items: center;
+        border-radius: 10px;
+        overflow: hidden;
+
+        .card-text {
+            position: relative;
+            text-align: justify;
+            bottom: 0;
+            width: 100%;
+            margin-top: 50%;
+            transform: translateY(calc(-150px + 1em));
+            transition: all 1s;
+
+            .titulo-1 {
+                font-size: 40px;
+                font-weight: bold;
+                text-align: center;
+                margin-bottom: 20px;
+                background-color: rgb(37, 46, 57, 0.7);
+                width: 100%;
+            }
+            .button {
+                display: block;
+                width: 100px;
+                margin: 2em auto 1em;
+                text-align: center;
+                font-size: 15px;
+                color: #fff;
+                line-height: 1;
+                position: relative;
+                font-weight: 700;
+                &::after {
+                    content: "\2192";
+                    opacity: 0;
+                    position: absolute;
+                    right: 0;
+                    top: 50%;
+                    transform: translate(0, -50%);
+                    transition: all 0.3s;
+                }
+                &:hover {
+                    &::after {
+                        transform: translate(5px, -50%);
+                        opacity: 1;
+                    }
+                }
+            
+            }
+
+            .card-text-p {
+                margin: 0x;
+            }
+        }
+       
+
+        h2 {
+            font-family: "Oswald", sans-serif;
+            font-size: 80px;
+            margin-bottom: 0px;
+            transition: 1.5s;
+        }
+
+        p {
+            font-family: "Open Sans", sans-serif;
+            font-size: 15px;
+        }
+
+        &:hover {
+            box-shadow: 0px 0px 70px #111;
+        }
+
+        
+    }
+    &:hover {
+        .card-text {
+            transform: translateY(0);
+            background-color: #252e39;
+            opacity: 0.8;
+
+            h2 {
+                font-size: 50px;
+            }
+
+            .titulo-3 {
+                font-size: 40px;
+            }
+        }
+    }
+}

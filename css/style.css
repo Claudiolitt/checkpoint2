@@ -1,17 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Quicksand:wght@300;400&family=Roboto:wght@100&display=swap');
 
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 :root {
     --primary-color: #252e39;
     --second-color:rgb(219,222,225);
     --thirdy-color: rgb(8, 172, 62);
+    --logo-blue: rgb(9, 164, 211);
 }
-body {
+
+
+html,body {
     height: fit-content;
 }
 
@@ -47,6 +52,13 @@ header::before {
     color: var(--second-color);
 }
 
+a:active {
+    color: #0f9c02;
+}
+
+a:visited {
+    color: #0f9c02;
+}
 .logo-cabecalho {
     background-image: url(../img/logo-alunos\ 1.png);
     background-repeat: no-repeat;
@@ -77,6 +89,7 @@ header div ul {
 .bg-dark {
     background-color: #252e39;
 }
+
 header .lista-cabecalho nav{    
     background-color: #252e39;
     padding: 0px;
@@ -129,6 +142,7 @@ main {
 
 }
 
+/*Banner*/
 .banner {
     display: flex;
     justify-content: center;
@@ -138,6 +152,7 @@ main {
     background-attachment: fixed;
     height: 80vh;
     width: 100%;
+    
     
 }
 
@@ -163,24 +178,11 @@ main {
     align-items: center;
 }
 
-.carousel-ctr {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-}
-
-.carousel-img {
-    height: 60vh;
-    width: 100%;
-}
-.carousel-inner {
-    height: 60vh;
-    width: 100%;
-}
+/*Slider Settings*/
 
 
-.card-container {
+/*Card Setting*/
+/*.card-container {
     height: fit-content;
     padding: 50px;
     display: flex;
@@ -198,15 +200,48 @@ main {
 
 .card-img {
     height: 30vh;
-}
+}*/
 footer {
     background-color: var(--primary-color);
-    height: 10vh;
+    height: 25vh;
     font-family: 'Noto Sans', sans-serif;
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     bottom: 0;
     width: 100%;
+    padding: 20px;
+    justify-content: center;
+    color: #fff;
+}
+
+
+.aluno {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+ 
+}
+.aluno span {
+    font-size: 15px;    
+}
+
+.aluno p {
+    height: fit-content;
+    font-size: 10px;
+}
+
+.social  {
+    display: flex;
+    gap: 15px;
+}
+.credito {
+    margin: 20px;
+    display: flex;
+    width: 100%;
+    font-size: 15px;
+    justify-content: center;
+    align-items: center;
 }
 
 @keyframes slide-in-elliptic-top-fwd {
@@ -260,41 +295,6 @@ footer {
 }
 
 
-
-
-/*
-@keyframes bg-pan-left {
-    0% {
-        box-shadow: 0px 0px 1px 1px #1c9c02;
-    }
-    10% {
-        box-shadow: 1px 1px 1px 2px #027d9c;
-    }
-    20% {
-        box-shadow: 0px 0px 1px 1px #1c9c02;
-    }
-    30% {
-        box-shadow: 1px 1px 1px 2px #027d9c;
-    }
-    40% {
-        box-shadow: 0px 0px 1px 1px #1c9c02;
-    }
-    50% {
-        box-shadow: 1px 1px 1px 2px #027d9c;
-    }
-    60% {
-        box-shadow: 0px 0px 1px 1px #1c9c02;
-    }
-    70% {
-        box-shadow: 1px 1px 1px 2px #027d9c;
-    }
-    80% {
-        box-shadow: 0px 0px 1px 1px #1c9c02;
-    }
-    90% {
-        box-shadow: 1px 1px 1px 2px #027d9c;
-    }
-    100% {
-        box-shadow: 0px 0px 1px 1px #1c9c02;
-    }
-  }*/
+@media screen {
+    
+}
