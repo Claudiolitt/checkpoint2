@@ -106,8 +106,7 @@ $primary-color: #252e39;
                     border-radius: 10px;
                     background: radial-gradient(circle at 80px 40px, #fff, transparent);
                 }
-                               
-               
+
                 &:hover {
                     box-shadow: 0px 0px 70px #111;
 
@@ -164,44 +163,92 @@ $primary-color: #252e39;
 .card-container {
     display: flex;
     flex-wrap: wrap;
-    padding: 20px;
+    padding: 30px;
     background-color: $primary-color;
     opacity: 0.8;
     color: #fff;
     margin: 0;
     overflow: hidden;
     transition: 1.5s;
+    gap: 30px;
+    justify-content: center;
 
     .background-1 {
         background-image: url("https://br.web.img3.acsta.net/medias/nmedia/18/90/95/96/20122166.jpg");
         background-size: cover;
         background-repeat: no-repeat;
-    }   
+        background-position: center;
+        border: 0;
+    }
 
+    .background-2 {
+        background-image: url("../img/hana-prime-video.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        border: 0;
+    }
+
+    .background-3 {
+        background-image: url("../img/Animais-Fantásticos-e-onde-habitam-ganha-data-de-estreia-na-Netflix.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        border: 0;
+    }
+
+    .background-4 {
+        background-image: url("../img/dune_1947.webp");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        border: 0;
+    }
+
+    .background-5 {
+        background-image: url("../img/The-Wheel-of-Time-sesong-1_7.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        border: 0;
+    }
+
+    .background-6 {
+        background-image: url("https://br.web.img3.acsta.net/medias/nmedia/18/90/95/96/20122166.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        border: 0;
+    }
+
+    
     .card {
-        width: 33%;
-        height: 70vh;
+        width: 25%;
+        height: 380px;
         display: flex;
         align-items: center;
         border-radius: 10px;
         overflow: hidden;
 
-        .card-text {
-            position: relative;
+        
+
+        .card-text {   
+            
             text-align: justify;
             bottom: 0;
             width: 100%;
-            margin-top: 50%;
-            transform: translateY(calc(-150px + 1em));
+            height: 90%;
+            transform: translateY(calc(310px + 1em));
             transition: all 1s;
 
-            .titulo-1 {
+            .titulo-1,.titulo-3 {
                 font-size: 40px;
                 font-weight: bold;
                 text-align: center;
                 margin-bottom: 20px;
-                background-color: rgb(37, 46, 57, 0.7);
+                background-color: rgba(37, 46, 57, 0.7);
                 width: 100%;
+                transition: 1s linear;
             }
             .button {
                 display: block;
@@ -213,6 +260,7 @@ $primary-color: #252e39;
                 line-height: 1;
                 position: relative;
                 font-weight: 700;
+
                 &::after {
                     content: "\2192";
                     opacity: 0;
@@ -222,20 +270,22 @@ $primary-color: #252e39;
                     transform: translate(0, -50%);
                     transition: all 0.3s;
                 }
+
                 &:hover {
+             
                     &::after {
                         transform: translate(5px, -50%);
                         opacity: 1;
                     }
                 }
-            
             }
 
             .card-text-p {
-                margin: 0x;
+                padding-left: 10px;
+                padding-right: 10px;
+                margin-bottom: 0x;
             }
         }
-       
 
         h2 {
             font-family: "Oswald", sans-serif;
@@ -253,21 +303,26 @@ $primary-color: #252e39;
             box-shadow: 0px 0px 70px #111;
         }
 
+        &:hover {
+
+            top: -10px;
         
-    }
-    &:hover {
-        .card-text {
-            transform: translateY(0);
-            background-color: #252e39;
-            opacity: 0.8;
-
-            h2 {
-                font-size: 50px;
-            }
-
-            .titulo-3 {
-                font-size: 40px;
+            .card-text {
+                transform: translateY(15%);
+                background-color: #252e39;
+                opacity: 0.8;
+    
+                h2 {
+                    font-size: 50px;
+                }
+    
+                .titulo-3 {
+                    font-size: 30px;
+                    text-align: center;
+                }
             }
         }
     }
+    
 }
+

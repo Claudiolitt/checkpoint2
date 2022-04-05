@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans&family=Quicksand:wght@300;400&family=Roboto:wght@100&display=swap");
 .slider {
   width: 100%;
@@ -129,101 +130,6 @@
   background: radial-gradient(circle at 80px 40px, #fff, transparent);
 }
 
-.slider .items-group .item .block .text {
-  width: 100%;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  text-align: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background-position: center;
-  background-attachment: fixed;
-  color: #fff;
-}
-
-.slider .items-group .item .block .text .card-text {
-  border-radius: 10px;
-  text-align: justify;
-  position: relative;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-  padding: 10px;
-  -webkit-transform: translateY(calc(280px + 1em));
-          transform: translateY(calc(280px + 1em));
-  -webkit-transition: all 1s;
-  transition: all 1s;
-}
-
-.slider .items-group .item .block .text .card-text h2 {
-  text-align: center;
-  margin: 20px;
-}
-
-.slider .items-group .item .block .text .card-text .button {
-  display: block;
-  width: 100px;
-  margin: 2em auto 1em;
-  text-align: center;
-  font-size: 15px;
-  color: #fff;
-  line-height: 1;
-  position: relative;
-  font-weight: 700;
-}
-
-.slider .items-group .item .block .text .card-text .button::after {
-  content: "\2192";
-  opacity: 0;
-  position: absolute;
-  right: 0;
-  top: 50%;
-  -webkit-transform: translate(0, -50%);
-          transform: translate(0, -50%);
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-}
-
-.slider .items-group .item .block .text .card-text .button:hover::after {
-  -webkit-transform: translate(5px, -50%);
-          transform: translate(5px, -50%);
-  opacity: 1;
-}
-
-.slider .items-group .item .block:hover .card-text {
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
-  background-color: #252e39;
-}
-
-.slider .items-group .item .block:hover .card-text h2 {
-  font-size: 50px;
-}
-
-.slider .items-group .item .block:hover .card-text .titulo-3 {
-  font-size: 40px;
-}
-
-.slider .items-group .item .block h2 {
-  font-family: "Oswald", sans-serif;
-  font-size: 80px;
-  margin-bottom: 0px;
-  -webkit-transition: 1.5s;
-  transition: 1.5s;
-}
-
-.slider .items-group .item .block p {
-  font-family: "Open Sans", sans-serif;
-  font-size: 15px;
-}
-
 .slider .items-group .item .block:hover {
   -webkit-box-shadow: 0px 0px 70px #111;
           box-shadow: 0px 0px 70px #111;
@@ -283,17 +189,71 @@
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding: 20px;
+  padding: 30px;
   background-color: #252e39;
   opacity: 0.8;
   color: #fff;
   margin: 0;
   overflow: hidden;
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
+  gap: 30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.card-container .background-1 {
+  background-image: url("https://br.web.img3.acsta.net/medias/nmedia/18/90/95/96/20122166.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 0;
+}
+
+.card-container .background-2 {
+  background-image: url("../img/hana-prime-video.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 0;
+}
+
+.card-container .background-3 {
+  background-image: url("../img/Animais-Fantásticos-e-onde-habitam-ganha-data-de-estreia-na-Netflix.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 0;
+}
+
+.card-container .background-4 {
+  background-image: url("../img/dune_1947.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 0;
+}
+
+.card-container .background-5 {
+  background-image: url("../img/The-Wheel-of-Time-sesong-1_7.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 0;
+}
+
+.card-container .background-6 {
+  background-image: url("https://br.web.img3.acsta.net/medias/nmedia/18/90/95/96/20122166.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 0;
 }
 
 .card-container .card {
-  width: 33%;
-  height: 70vh;
+  width: 25%;
+  height: 380px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -304,49 +264,29 @@
   overflow: hidden;
 }
 
-.card-container .card .text {
-  margin-top: 50%;
-  width: 100%;
-  height: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  text-align: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background-position: center;
-  background-attachment: fixed;
-  color: #fff;
-}
-
-.card-container .card .text .card-text {
+.card-container .card .card-text {
   text-align: justify;
   bottom: 0;
-  margin: 0;
-  padding: 0px 5px 0px 5px;
   width: 100%;
-  height: 100%;
-  -webkit-transform: translateY(calc(110px + 1em));
-          transform: translateY(calc(110px + 1em));
+  height: 90%;
+  -webkit-transform: translateY(calc(310px + 1em));
+          transform: translateY(calc(310px + 1em));
   -webkit-transition: all 1s;
   transition: all 1s;
 }
 
-.card-container .card .text .card-text .titulo-1 {
+.card-container .card .card-text .titulo-1, .card-container .card .card-text .titulo-3 {
   font-size: 40px;
   font-weight: bold;
   text-align: center;
   margin-bottom: 20px;
-  background-color: #252e39;
+  background-color: rgba(37, 46, 57, 0.7);
   width: 100%;
+  -webkit-transition: 1s linear;
+  transition: 1s linear;
 }
 
-.card-container .card .text .card-text .button {
+.card-container .card .card-text .button {
   display: block;
   width: 100px;
   margin: 2em auto 1em;
@@ -358,7 +298,7 @@
   font-weight: 700;
 }
 
-.card-container .card .text .card-text .button::after {
+.card-container .card .card-text .button::after {
   content: "\2192";
   opacity: 0;
   position: absolute;
@@ -370,29 +310,16 @@
   transition: all 0.3s;
 }
 
-.card-container .card .text .card-text .button:hover::after {
+.card-container .card .card-text .button:hover::after {
   -webkit-transform: translate(5px, -50%);
           transform: translate(5px, -50%);
   opacity: 1;
 }
 
-.card-container .card .text .card-text-p {
-  margin: 0x;
-}
-
-.card-container .card:hover .card-text {
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
-  background-color: #252e39;
-  opacity: 0.8;
-}
-
-.card-container .card:hover .card-text h2 {
-  font-size: 50px;
-}
-
-.card-container .card:hover .card-text .titulo-3 {
-  font-size: 40px;
+.card-container .card .card-text .card-text-p {
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 0x;
 }
 
 .card-container .card h2 {
@@ -413,11 +340,23 @@
           box-shadow: 0px 0px 70px #111;
 }
 
-.card-container .background-1 {
-  background-image: url("https://br.web.img3.acsta.net/medias/nmedia/18/90/95/96/20122166.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin: 0;
-  border: 0;
+.card-container .card:hover {
+  top: -10px;
+}
+
+.card-container .card:hover .card-text {
+  -webkit-transform: translateY(15%);
+          transform: translateY(15%);
+  background-color: #252e39;
+  opacity: 0.8;
+}
+
+.card-container .card:hover .card-text h2 {
+  font-size: 50px;
+}
+
+.card-container .card:hover .card-text .titulo-3 {
+  font-size: 30px;
+  text-align: center;
 }
 /*# sourceMappingURL=sass.css.map */
