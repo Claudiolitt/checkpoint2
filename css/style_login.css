@@ -17,19 +17,22 @@ header div ul {
     display: flex;
     list-style: none;
     gap: 10px;
-    
+
 }
 
 header div ul a {
-    color: rgb(219,222,225);
+    color: rgb(219, 222, 225);
     text-decoration: none;
 }
+
 
 main {display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     font-family: 'Noto Sans', sans-serif;
+    background-color: #0F171E;
+    height: 80vh;
 
    
 
@@ -95,4 +98,18 @@ main img {width: 200px;
 main span {
     color: rgb(219,222,225);
     font-size: 0.7rem;
+    }
+
+    footer {height: 10vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #0F171E;
+        
+    
+    }
+    
+    footer img {
+        width: 100px;
+    
     }
