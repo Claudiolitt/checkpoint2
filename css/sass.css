@@ -244,7 +244,7 @@
 }
 
 .card-container .background-6 {
-  background-image: url("https://br.web.img3.acsta.net/medias/nmedia/18/90/95/96/20122166.jpg");
+  background-image: url("../img/48a1d77ee964a0503c1330a99019296d3cbe500ef099eca34fdc989915b6cb65.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -275,7 +275,8 @@
   transition: all 1s;
 }
 
-.card-container .card .card-text .titulo-1, .card-container .card .card-text .titulo-3 {
+.card-container .card .card-text .titulo-1,
+.card-container .card .card-text .titulo-3 {
   font-size: 40px;
   font-weight: bold;
   text-align: center;
@@ -358,5 +359,26 @@
 .card-container .card:hover .card-text .titulo-3 {
   font-size: 30px;
   text-align: center;
+}
+
+@media screen and (max-width: 760px) {
+  .card-container .card {
+    width: 80%;
+    height: 400px;
+  }
+  .card-container .card .card-text {
+    -webkit-transform: translateY(calc(330px + 1em));
+            transform: translateY(calc(330px + 1em));
+  }
+  header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 10px;
+  }
+  .banner {
+    margin-top: 100px;
+  }
 }
 /*# sourceMappingURL=sass.css.map */

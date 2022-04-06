@@ -17,6 +17,7 @@ var mouse = {
         'https://streamingsbrasil.com/wp-content/uploads/2019/09/Animais-Fant%C3%A1sticos-e-onde-habitam-ganha-data-de-estreia-na-Netflix.jpg',
         'https://olhardigital.com.br/wp-content/uploads/2021/05/Elenco-de-Duna-tem-scaled.jpg',
         'https://i0.wp.com/www.artofvfx.com/wp-content/uploads/2021/10/wheel_of_time_ver3_xlg.jpg?ssl=1',
+        'https://m.media-amazon.com/images/S/pv-target-images/48a1d77ee964a0503c1330a99019296d3cbe500ef099eca34fdc989915b6cb65.jpg',
     ];
 
 $('.block').on('mousemove', function (e) {

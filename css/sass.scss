@@ -214,14 +214,13 @@ $primary-color: #252e39;
     }
 
     .background-6 {
-        background-image: url("https://br.web.img3.acsta.net/medias/nmedia/18/90/95/96/20122166.jpg");
+        background-image: url("../img/48a1d77ee964a0503c1330a99019296d3cbe500ef099eca34fdc989915b6cb65.jpg");
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
         border: 0;
     }
 
-    
     .card {
         width: 25%;
         height: 380px;
@@ -230,10 +229,7 @@ $primary-color: #252e39;
         border-radius: 10px;
         overflow: hidden;
 
-        
-
-        .card-text {   
-            
+        .card-text {
             text-align: justify;
             bottom: 0;
             width: 100%;
@@ -241,7 +237,8 @@ $primary-color: #252e39;
             transform: translateY(calc(310px + 1em));
             transition: all 1s;
 
-            .titulo-1,.titulo-3 {
+            .titulo-1,
+            .titulo-3 {
                 font-size: 40px;
                 font-weight: bold;
                 text-align: center;
@@ -272,7 +269,6 @@ $primary-color: #252e39;
                 }
 
                 &:hover {
-             
                     &::after {
                         transform: translate(5px, -50%);
                         opacity: 1;
@@ -304,18 +300,17 @@ $primary-color: #252e39;
         }
 
         &:hover {
-
             top: -10px;
-        
+
             .card-text {
                 transform: translateY(15%);
                 background-color: #252e39;
                 opacity: 0.8;
-    
+
                 h2 {
                     font-size: 50px;
                 }
-    
+
                 .titulo-3 {
                     font-size: 30px;
                     text-align: center;
@@ -323,6 +318,29 @@ $primary-color: #252e39;
             }
         }
     }
-    
 }
 
+@media screen and (max-width: 760px) {
+
+    .card-container {
+        .card {
+            width: 80%;
+            height: 400px;
+
+            .card-text {
+                transform: translateY(calc(330px + 1em));
+            }
+        }
+    }
+
+    header {
+        flex-direction: column;
+        padding: 10px;        
+    }
+
+    .banner {
+        margin-top: 100px;
+    }
+
+    
+}
