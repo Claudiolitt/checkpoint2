@@ -139,7 +139,6 @@ header .lista-cabecalho nav {
     width: 20%;
 
 }
-
 .banner {
     display: flex;
     gap: 20px;
@@ -160,7 +159,7 @@ header .lista-cabecalho nav {
 main {
     display: flex;
     flex-direction: column;
-    margin: 70px;
+    margin: 60px;
 
 }
 
@@ -217,7 +216,7 @@ main button {display: flex;
 
 .card_img img {
     width: 60vw;
-    opacity: 0.6;
+    opacity: 0.5;
     
 
 }
@@ -331,7 +330,6 @@ footer {
 }
 
 
-
 .video {
     display: flex;
     justify-content: center;
@@ -405,5 +403,10 @@ footer {
     
     
     }
+
+
+
+
+
 
 }

@@ -4,11 +4,13 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    list-style: none;
+    text-decoration: none;
 }
 
-body {background-color: #0F171E
 
-
+body {
+    background-color: #0F171E
 }
 
 
@@ -16,122 +18,196 @@ header {
     background-color: #1A232E;
     height: 10vh;
     font-family: 'Noto Sans', sans-serif;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+header img {width: 100px;
+
 }
 
 header div ul {
     display: flex;
     list-style: none;
     gap: 10px;
-    
+
 }
 
 header div ul a {
-    color: rgb(219,222,225);
+    color: rgb(219, 222, 225);
     text-decoration: none;
 }
 
-.banner {display: flex;
+.banner {
+    display: flex;
     gap: 20px;
     align-items: center;
     background-color: #0F171E;
-    color: #FFFFFF ;
+    color: #FFFFFF;
 
 }
 
-.descri {font-family: 'Noto Sans', sans-serif;
+.descri {
+    font-family: 'Noto Sans', sans-serif;
     width: 40vw;
+    height: 100%;
 
 
 }
 
-main {display: flex;
+main {
+    display: flex;
     flex-direction: column;
     margin: 50px;
 
 }
-main ul li {text-decoration: none;
-    list-style: none;
-    padding: 10px;
+
+main ul li {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
     font-size: 1.1rem;
-    margin: 20px;
+    margin: 10px;
 
 
 }
-.descri span {color: #79B8F3;
+
+.descri span {
+    color: #79B8F3;
 
 
 
 
 }
-main button {padding: 30px;
-    background-color:#0F79AF ;
-    margin-left: 50px;
+
+main button {display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 30px;
+    background-color: #0F79AF;
     color: #FFFFFF;
     border-radius: 5px;
+    font-weight: bolder;
+    font-family: 'Noto Sans', sans-serif;
 
 
 }
-.descri h2 {padding: 10px;
+
+.ajustbutton {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
 
 }
-.descri p {font-size: 0.9rem;
+
+.descri h2 {
+    padding: 10px;
+
+}
+
+.descri p {
+    font-size: 0.9rem;
     margin: 20px;
 
 }
 
-
-.fant {width: 60vw;
-
-}
-
-footer {display: flex;
-    flex-direction: column;
-    align-items: center;
-
-}
-footer img {width: 100px;
-
-}
-.video {display: flex;
-    justify-content: center;
-    margin-top: 50px;
+.card_img img {
+    width: 60vw;
+    opacity: 0.6;
     
 
+}
+
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #0F171E;
+    color: rgb(219, 222, 225);
+    font-family: 'Noto Sans', sans-serif
+}
+
+footer img {
+    width: 100px;
 
 }
 
-@media (max-width: 460px){
-    .banner {display: flex;
+.video {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    flex-wrap: wrap;
+
+
+
+}
+
+
+.video img {
+    width: 20vw;
+    margin: 30px;
+    height: 100%;
+
+
+}
+
+.video img:hover {
+    transform: scale(1.5);
+    transition-duration: 1s;
+}
+
+@media (max-width: 460px) {
+    .banner {
+        display: flex;
         flex-direction: column-reverse;
 
 
     }
-    main ul li {font-size: 0.8rem;
+
+    main ul li {
+        font-size: 0.8rem;
         margin: 0px;
         padding: 5px;
 
     }
 
-    .lista {padding: 10px;
+    .lista {
+        padding: 10px;
 
     }
 
-    .descri {font-size: 0.7rem;
+    .descri {
+        font-size: 0.7rem;
         width: 60vw;
 
     }
 
-    .descri p {margin: 0px ;
+    .descri p {
+        margin: 0px;
         font-size: 0.8rem;
 
 
     }
 
-    main {margin: 10px;
+    main {
+        margin: 10px;
 
     }
-    main button {margin: 20px;
 
+    main button {
+        margin: 20px;
+
+    }
+    .video img {
+        width: 80vw;
+        margin: 30px;
+        height: 100%;
+    
+    
     }
 
 
@@ -140,4 +216,3 @@ footer img {width: 100px;
 
 
 }
-

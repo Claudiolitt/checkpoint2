@@ -196,6 +196,45 @@ main {
 
 }
 
+.titulo-destaque {
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: 'Noto',sans-serif;
+    text-align: center;
+}
+
+.card-us {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    text-align: justify;
+    
+    
+
+}
+
+.artigo {
+    background-color: #1A232E;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    padding: 50px;
+}
+
+.artigo::selection {
+    color: white;
+    background-color: #2b404d;
+}
+.description {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    text-align: justify;
+    padding: 50px;
+
+}
 .card {
     width: 25%;
     height: 40vh;
@@ -309,6 +348,15 @@ footer {
         height: 30vh;
         bottom: 0;
         padding: 20px;
+    }
+
+    .description {
+        height: fit-content;
+        margin-top: 120px;
+    }
+
+    .artigo {
+        font-size: 1rem;
     }
 }
 

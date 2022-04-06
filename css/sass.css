@@ -244,7 +244,7 @@
 }
 
 .card-container .background-6 {
-  background-image: url("../img/48a1d77ee964a0503c1330a99019296d3cbe500ef099eca34fdc989915b6cb65.jpg");
+  background-image: url("../img/harry-potter.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -283,6 +283,8 @@
   margin-bottom: 20px;
   background-color: rgba(37, 46, 57, 0.7);
   width: 100%;
+  padding-left: 5px;
+  padding-right: 5px;
   -webkit-transition: 1s linear;
   transition: 1s linear;
 }
@@ -350,6 +352,7 @@
           transform: translateY(15%);
   background-color: #252e39;
   opacity: 0.8;
+  color: white;
 }
 
 .card-container .card:hover .card-text h2 {
