@@ -108,7 +108,7 @@ main {
     justify-content: center;
     align-items: center;
     font-family: 'Noto Sans', sans-serif;
-    height: 75vh;
+    height: fit-content;
     padding-top: 100px;
     background-color: #0F171E;
 }
@@ -122,7 +122,8 @@ main {
     color: rgb(219, 222, 225);
     gap: 5px;
     width: 350px;
-    height: 50vh;
+    height: 70vh;
+    margin-bottom: 50px;
 
 
 }
@@ -305,5 +306,19 @@ footer {
     100% {
         background-color: #02649c;
         background-position: 90% 10%;
+    }
+}
+
+@media (max-width: 760px) {
+
+    header {
+            flex-direction: column;
+            padding: 10px;        
+    }
+   
+    footer {
+        height: 30vh;
+        bottom: 0;
+        padding: 20px;
     }
 }

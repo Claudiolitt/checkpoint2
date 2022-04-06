@@ -407,3 +407,17 @@ footer {
     }
 
 }
+
+@media (max-width: 760px) {
+
+    header {
+            flex-direction: column;
+            padding: 10px;        
+    }
+   
+    footer {
+        height: 30vh;
+        bottom: 0;
+        padding: 20px;
+    }
+}
